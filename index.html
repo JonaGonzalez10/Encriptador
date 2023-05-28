@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Encriptador</title>
+    
+</head>
+
+<body>
+    <div class="contenedor">
+        <video src="/media/pexels-tima-miroshnichenko-5377684-3840x2160-25fps.mp4" autoplay muted loop></video>
+            
+        <div class="encryptador">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
+            placeholder="Ingresa el texto aqui"></textarea>
+        </div>
+
+        <div class="terminos">
+            <p>Todos los derechos reservados</p>
+        </div>
+
+        <div class="botones">
+            <input type="button" class="btn-encryptar" value="Encryptar"
+            onclick="encriptar()">
+            <input type="button" class="btn-desencryptar" value="Desencryptar"
+            onclick="desncriptar">
+        </div>
+
+        <div class="txtencriptado">
+            <img src="/img/pexels-kevin-ku-577585.jpg" alt="">
+            <div class="mensaje-encryptado" id="mensaje-encryptado">
+                <h2 id="titulo-mensaje">Ningun mensaje encriptado</h2>
+                <p id="parrafo">Ingresa el texto que deseas encriptar o desincriptar</p>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
